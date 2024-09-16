@@ -1,0 +1,14 @@
+<% layout('/layouts/boilerplate') -%>
+
+<body>
+    <h3>Show All Data</h3>
+    <li><%= boy.name%></li>
+    <li><%= boy.age%></li>
+    <li><%= boy.city%></li>
+    <form action="/boys/<%=boy._id%>/edit" method="get">
+        <button>Edit</button>
+    </form>
+    <form action="/boys/<%=boy._id%>?_method=delete" method="post">
+        <button>Delete</button>
+    </form>
+</body>

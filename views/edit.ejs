@@ -1,0 +1,12 @@
+<% layout('/layouts/boilerplate') -%>
+
+<body>
+    <h3>Edit Your Form</h3>
+   <form action="/boys/<%=boy._id%>?_method=put" method="post">
+    <input type="text" placeholder="name" name="boy[name]" value="<%=boy.name %>"><br/>
+    <input type="text" placeholder="age" name="boy[age]" value="<%=boy.age %>"><br/>
+    <input type="text" placeholder="city" name="boy[city]" value="<%=boy.city %>"><br/>
+    <button>Edit</button>
+</form>
+
+</body>

@@ -1,0 +1,11 @@
+<% layout('/layouts/boilerplate') -%>
+
+<body>
+  <h3>All Boys</h3>
+  <form action="/boys/new" method="get">
+    <button>Create New Data</button>
+  </form><br/>
+ <% for(let boy of boys){ %>
+    <li> <a href="/boys/<%= boy._id%>"> <%= boy.name %></a></li>
+ <% } %>
+</body>
